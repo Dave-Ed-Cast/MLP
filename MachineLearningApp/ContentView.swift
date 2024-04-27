@@ -15,7 +15,7 @@ import SwiftUI
 
  For this project a tabular regression is used because it predicts the numeric value of a feature, given other feature's values. Features are represented as columns in tabular data.
  
- After naming, we go to Training Data and select a .csv file that contains all the data we need. Then, after selecting, choose the feature and 
+ After naming, we go to Training Data and select a .csv file that contains all the data we need. Then, after selecting, choose the feature and then the target that is used for CoreML, along with the features that are the things CoreML is going to use. There is a multiple selection so we can decide which to use, click train and we are done. Another thing is that we can use different algorithms. Testing can be done in testing tab, and in evaluation we can understand the root mean square error, which is the margin distance that our trained model has to give incorrect inforation. In this case we are going to have almost 3 minutes of margin error which is quite acceptable in our case. Different training can be done to get different outcomes, by simply duplicating and repeating the process.
  */
 struct ContentView: View {
     
